@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=”en”>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,9 +11,9 @@
 
             <nav>
                 <ul>
-                    <li><a href="#April 5, 2021">April 5, 2021</a></li>
-                    <li><a href="#April 6, 2021">April 6, 2021</a></li>
-                    <li><a href="#April 7, 2021">April 7, 2021</a></li>
+                    <li><a href="#Day1">April 5, 2021</a></li>
+                    <li><a href="#Day2">April 6, 2021</a></li>
+                    <li><a href="#Day3">April 7, 2021</a></li>
                 </ul>
             </nav>
         </header>
@@ -150,9 +150,9 @@
             <hr>
 
             <section>
-                <form action="">
+                <form action="action_page.php">
                     <fieldset>
-                        <label for="day">Day #:</label>
+                        <label for="day_num">Day #:</label>
                         <input type="text" name="day_num" id="day_num">
                         <input type="submit" value="Submit">
                         <br>
@@ -161,9 +161,9 @@
                     </fieldset>
                 </form>
                 <h3>Highlights/Lowlights:</h3>
-                <form action="" method="get">
+                <form action="action_page.php" method="get">
                     <fieldset>
-                        <label for="highlight">Does today have more:</label>
+                        <label for="high">Does today have more:</label>
                         <input list="highlights" name="highlights" id="high">
                         <datalist id="highlights">
                             <option value="Highlights">
@@ -190,7 +190,7 @@
                         <input type="submit" value="Submit">
                     </fieldset>
                 </form>
-                <form action="">
+                <form action="action_page.php">
                     <fieldset>
                         <label for="entry">Journal Entry:</label>
                         <textarea name="entry" id="entry" cols="50" rows="8"></textarea><br>
