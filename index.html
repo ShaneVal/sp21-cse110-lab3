@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="style.css" media="screen and (min-width: 900px)">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title> Journal Entries </title>
+        <style>
+            div{
+                color: 	#ffffff;
+                font-size: 0.6in;
+            }
+            p{
+                font-size: 20px;
+                line-height: 50lh;
+                margin: 35px 70px 50px 90px;
+                position: sticky;
+                font-family: 'Dancing Script', cursive;
+            }
+            nav{
+                font-size: 13pt;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <div>April Entries</div>
+            <div id="mark">April Entries</div>
 
             <nav>
                 <ul>
@@ -28,19 +47,19 @@
                     <summary>Pic Explanation</summary>
                     This is to represent how I spent a majority of my night programming in Verilog HDL with my lab partner for my degitial design course.
                 </details>
-                <h3>Highlights/Lowlights:</h3>
-                <ul>
+                <h3 class="col" target="_blank">Highlights/Lowlights:</h3>
+                <ul class="ems">
                     <li>Met with lab partner</li>
                     <li>Taught girlfriend Python basics</li>
                     <li>Ate my favorite burrito</li>
                     <li>Finished all my homework due for the week</li>
                     <li>Was able to watch my favorite show</li>
                     <li>Forgot to eat dinner</li>
-                    <li>Spent 3 hours doing a lab</li>
+                    <li class="steez">Spent 3 hours doing a lab</li>
                     <li>Did not go out of the house</li>
                 </ul>
                 <h3>To-Do:</h3>
-                <ol>
+                <ol class="box1">
                     <li><input type="checkbox"/> Do my physical therapy for left knee </li>
                     <li><input type="checkbox"/> Watch 8am lecture </li>
                     <li><input type="checkbox"/> Watch 9am lecture </li>
@@ -49,7 +68,7 @@
                     <li><input type="checkbox"/> Start on Lab 2 </li>
                 </ol>
 
-                <p>
+                <p class="box">
                     It's been a little under two weeks since I've had my <strong>ACL reconstruction operation</strong> on my left knee and I was <em>really</em> nervous
                     going to my <b class="to-do">check-up appointment</b>. I had high hopes in them saying I could walk without my crutches; I
                     hate those things. The only good thing that came out of it was me getting the ok to finally take off my 
@@ -69,7 +88,7 @@
             <section>
                 <h1 id="Day2">Day 2</h1>
                 <h2><span class="date">April 6, 2021</span></h2>
-                <h4>Cupcake No Fillin' - Trunk Boiz</h4>
+                <h4 style="color: snow;">Cupcake No Fillin' - Trunk Boiz</h4>
                 <audio controls>
                     <source src="Cupcake%20No%20Fillin.mp3" type="audio/mpeg">
                 </audio>
@@ -77,8 +96,8 @@
                     <summary>Song Explanation</summary>
                     This pretty much summarizes what type of music/songs were playing throughout my roadtrip to LA.
                 </details>
-                <h3>Highlights/Lowlights:</h3>
-                <ul>
+                <h3 target="_blank">Highlights/Lowlights:</h3>
+                <ul class="ems">
                     <li>Comfortably holding my weight on my left knee in the shower for the first time</li>
                     <li>Finally reading lines in my acting class</li>
                     <li>Reconnecting with an old friend</li>
@@ -88,14 +107,14 @@
                     <li>Walked on my left leg at a bigger distance since surgery</li>
                     <li>Could not ice my knee</li>
                 </ul>
-                <h3>To-Do:</h3>
+                <h3 class="box2">To-Do:</h3>
                 <ol>
                     <li><input type="checkbox"/> Do my physical therapy for left knee </li>
                     <li><input type="checkbox"/> Watch the rest of my 11am lecture </li>
                     <li><input type="checkbox"/> Watch 4pm lecture recording </li>
                     <li><input type="checkbox"/> Drive to LA safely </li>
                 </ol>
-                <p>
+                <p class="box">
                     I had no idea when I was leaving to <b class="to-do">drive to LA.</b> I did not want to miss any lectures for that day, but knew I
                     was going to have to miss one so that I don't arrive too late. It was going to have to be my 4pm lecture.
                     The one I was trying to avoid, of course. <i>I hate watching zoom recordings of the class</i>. My friend, who was carpooling with me, and I decided to try and 
@@ -114,7 +133,7 @@
             <section>
                 <h1 id="Day3">Day 3</h1>
                 <h2><span class="date">April 7, 2021</span></h2>
-                <h4>Ollie (girlfriend's cat)</h4>
+                <h4 style="color: snow;">Ollie (girlfriend's cat)</h4>
                 <video width="320" height="240" controls>
                     <source src="IMG_2304.mp4" type="video/mp4">
                 </video>
@@ -122,19 +141,19 @@
                     <summary>Video Explanation</summary>
                     I spent the majority of the day being a cat dad; Ollie's only 5 months.
                 </details>
-                <h3>Highlights/Lowlights:</h3>
-                <ul>
+                <h3 target="_blank">Highlights/Lowlights:</h3>
+                <ul class="ems">
                     <li>Woke up to Ollie on my chest</li>
                     <li>Learned a new coding language</li>
                     <li>Forgot to eat lunch</li>
                     <li>Woke up with some knee pain from yesterday</li>
                 </ul>
                 <h3>To-Do:</h3>
-                <ol>
+                <ol class="rems">
                     <li><input type="checkbox"/> Do my physical therapy for left knee </li>
                     <li><input type="checkbox"/> Work/Complete Lab 2 for CSE 110 </li>
                 </ol>
-                <p>
+                <p class="box">
                     I never really grew up with cats, so being around is still pretty new to me. I'm more of a dog person
                     Ollie warmed up to me pretty fast, I blame how small my girlfriend got him. He was five weeks and the cutest thing
                     I've seen in a long while. <em>What can I say I'm a total softie.</em> I like spending the night at my girlfriend's 
